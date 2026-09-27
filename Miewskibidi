@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halloween 👻</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 25vh;
+    }
+
+    button {
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #prank {
+      display: none;
+    }
+
+    #prank img {
+      max-width: 90%;
+      max-height: 70vh;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="question">
+    <h1>May file para sa'yo 👀</h1>
+    <p>Gusto mo bang buksan?</p>
+    <button onclick="showPrank()">YES</button>
+    <button onclick="showPrank()">NO</button>
+  </div>
+
+  <div id="prank">
+    <img src="e9e1968146a571eba160ae06015686bc.jpg" alt="Halloween prank">
+    <h1>BOO! 👻</h1>
+  </div>
+
+  <script>
+    function showPrank() {
+      document.getElementById("question").style.display = "none";
+      document.getElementById("prank").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
